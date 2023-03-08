@@ -8,6 +8,49 @@
     <title>Ejercicios DOM</title>
 </head>
 <body>
-    <p></p>
+    <div class="container">
+    <template id="cardsTemplate">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo" />
+            <h2>Nombre</h2>
+            <p>Descripción</p>
+        </div>
+        <style>
+
+            .container{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            .card {
+                width: 300px;
+                height: 300px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                font-family: cooper, Verdana;
+            }
+
+            .card p {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.3rem;
+                text-align: center;
+            }
+    
+            .card img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        </style>
+    </template>
+    </div>
 </body>
 </html>
